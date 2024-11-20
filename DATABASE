@@ -1,0 +1,37 @@
+Create database store;
+
+CREATE TABLE Products (
+    ProductNumber INT PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(50),
+    Price FLOAT,
+    Quantity INT,
+    ExpiryDate DATE,
+    Expired BOOLEAN
+);
+
+INSERT INTO Products (ProductNumber, ProductName, Price, Quantity, ExpiryDate, Expired) VALUES
+(1, 'Rice', 55.00, 10, '2026-10-16', FALSE),
+(2, 'Noodles', 15.00, 34, '2026-10-16', FALSE),
+(3, 'Canned', 35.00, 16, '2028-10-16', FALSE),
+(4, 'Cooking oil', 40.00, 23, '2025-10-16', FALSE),
+(5, 'Soy sauce', 25.00, 44, '2025-04-16', FALSE),
+(6, 'Vinegar', 25.00, 44, '2028-10-16', FALSE),
+(7, 'Sugar', 43.00, 28, '2028-10-16', FALSE),
+(8, 'Salt', 5.00, 15, '2028-10-16', FALSE),
+(9, 'Coffee', 15.00, 50, '2025-10-16', FALSE),
+(10, 'Tea', 15.00, 45, '2026-10-16', FALSE),
+(11, 'Snacks', 8.00, 24, '2025-04-16', FALSE),
+(12, 'Candies', 2.00, 33, '2025-04-16', FALSE),
+(13, 'Beverages', 15.00, 55, '2025-04-16', FALSE),
+(14, 'Condiments', 15.00, 23, '2025-04-16', FALSE),
+(15, 'Frozen goods', 55.00, 44, '2025-10-16', FALSE),
+(16, 'Detergent', 15.00, 34, '2026-10-16', FALSE),
+(17, 'Toiletries', 18.00, 20, '2026-10-16', FALSE),
+(18, 'Diapers', 23.00, 20, '2027-10-16', FALSE),
+(19, 'Household supplies', 25.00, 20, '2026-10-16', FALSE),
+(20, 'Seasoning mixes', 16.00, 33, '2026-10-16', FALSE),
+(21, 'Ice cream', 55.00, 25, '2025-01-16', FALSE),
+(22, 'Bread', 50.00, 25, '2024-10-23', FALSE),
+(23, 'Eggs', 11.00, 25, '2024-11-13', FALSE),
+(24, 'Fruits', 35.00, 15, '2024-10-30', FALSE),
+(25, 'Feeds', 55.00, 23, '2025-10-13', FALSE);
